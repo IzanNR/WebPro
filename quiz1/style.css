@@ -5,7 +5,7 @@ body {
     padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    transition: background-color 0.5s ease, color 0.5s ease; /* Added transition effect */
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 /* Navbar */
@@ -16,14 +16,14 @@ body {
     background-color: var(--header-background);
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Align left and right sections */
+    justify-content: space-between;
     height: 60px;
     z-index: 1000;
     border: none;
     transition: background-color 0.5s ease;
 }
 
-/* Left Section of Navbar (Theme Switch + Hamburger) */
+
 .nav-left {
     display: flex;
     align-items: center;
@@ -35,13 +35,13 @@ body {
     font-size: 24px;
     cursor: pointer;
     color: var(--text-color);
-    margin-left: 5px; /* Ensure it's properly aligned with theme switch */
+    margin-left: 5px;
 }
 
 /* Center the nav items */
 .nav-center {
     display: flex;
-    justify-content: left; /* Aligns links to the left on larger screens */
+    justify-content: left;
     flex-grow: 1;
 }
 
@@ -82,11 +82,11 @@ body {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
-        margin-right: 20px; /* Further adjusted to align properly with the theme switch */
+        margin-right: 20px;
     }
 
     .nav-center {
-        display: none; /* Hide links by default on small screens */
+        display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
@@ -97,7 +97,7 @@ body {
     }
 
     .nav-center.show {
-        display: flex; /* Show links when hamburger is clicked */
+        display: flex;
     }
 
     .nav-links {
@@ -169,7 +169,7 @@ input:checked + .slider:before {
     margin: 0 auto;
     padding: 60px 15px 0;
     background-color: var(--background-color);
-    transition: background-color 0.5s ease; /* Transition for the container */
+    transition: background-color 0.5s ease;
 }
 
 /* Adjust Container Size for Smaller Screens */
@@ -192,7 +192,7 @@ input:checked + .slider:before {
     margin: 20px 0;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.5s ease; /* Transition for sections */
+    transition: background-color 0.5s ease;
 }
 
 .section p {
@@ -257,7 +257,7 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.5s ease; /* Transition for images */
+    transition: background-color 0.5s ease;
 }
 
 .image-placeholder img {
